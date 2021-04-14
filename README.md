@@ -1,4 +1,4 @@
-# self-music
+# fried-chicken-music
 
 ## Project setup
 ```
