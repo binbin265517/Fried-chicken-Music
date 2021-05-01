@@ -1,0 +1,19 @@
+<template>
+  <div>{{'recommend'}}</div>
+</template>
+
+<script>
+  import {getRecommend} from "../serve/recommend";
+
+  export default {
+    name: 'recommend',
+    async created() {
+      const result = await getRecommend()
+      console.log(result)
+    }
+  }
+</script>
+
+<style scoped>
+
+</style>
