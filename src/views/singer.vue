@@ -1,13 +1,26 @@
 <template>
-    <div>歌手</div>
+  <div class="singer">
+
+  </div>
 </template>
 
 <script>
-    export default {
-        name: 'singer'
+  import { getSingerList } from '@/service/singer'
+
+  export default {
+    name: 'singer',
+    async created() {
+      const singerList = await getSingerList()
+      console.log(singerList)
     }
+  }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+  .singer {
+    position: fixed;
+    width: 100%;
+    top: 88px;
+    bottom: 0;
+  }
 </style>
